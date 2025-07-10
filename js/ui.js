@@ -27,7 +27,7 @@ export class Ui {
                 </div>
             `;
         }
-        document.querySelector('.games-container').innerHTML = gamesContainer;
+        document.getElementById('game-data').innerHTML = gamesContainer;
     }
 
     displayDetails(data) {
