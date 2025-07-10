@@ -20,7 +20,7 @@ export class Ui {
                             </div>
                         </div>
                         <footer class="card-footer small d-flex flex-row align-items-center justify-content-between">
-                            <span class="badge badge-bg">${data[i].genre}</span>
+                            <span class="badge game-genre">${data[i].genre}</span>
                             <span class="badge badge-bg">${data[i].platform}</span>
                         </footer>
                     </div>

@@ -3,6 +3,10 @@
     transition: all 0.3s ease-in-out;
 }
 
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
 /*!*!*!*!*!*!* Loading Animation *!*!*!*!*!*!*/
 
 .loading-screen {
@@ -93,7 +97,7 @@ nav.navbar {
 }
 
 .nav-link {
-    font: 500 1.1rem 'Poppins', sans-serif;
+    font: 500 1.1rem 'Poppins', sans-serif !important;
     transition: all 0.4s ease-in-out;
 }
 
@@ -106,7 +110,7 @@ nav.navbar {
 }
 
 .navbar-brand {
-    font: 700 1.5rem 'Poppins', sans-serif;
+    font: 700 1.5rem 'Poppins', sans-serif !important;
 }
 
 .navbar-toggler {
@@ -129,5 +133,11 @@ nav.navbar {
 
 .card-bg {
     background: #131313;
-    /*padding: 5px 0;*/
+}
+
+.game-genre {
+    color: #5CA7C9;
+    border-left: 4px solid #386883;
+    background-image: linear-gradient(to right, #386883 0%, #15242B 50%, #131313 100%);
+    padding: 4px 4px;
 }
