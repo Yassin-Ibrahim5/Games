@@ -15,7 +15,7 @@ export class Ui {
                                     <h3 class="h6 small game-title">${data[i].title}</h3>
                                     <span class="badge badge-bg">Free</span>   
                                 </div>
-                                <p class="card-text small text-center opacity-50 game-description">${data[i].short_description}
+                                <p class="card-text small opacity-50 short-description">${data[i].short_description}
                                 </p>
                             </div>
                         </div>

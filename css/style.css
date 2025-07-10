@@ -141,3 +141,12 @@ nav.navbar {
     background-image: linear-gradient(to right, #386883 0%, #15242B 50%, #131313 100%);
     padding: 4px 4px;
 }
+
+h3.game-title {
+    color: white;
+    font: 500 1.075rem 'Poppins', sans-serif;
+}
+
+p.short-description {
+    color: white;
+}
