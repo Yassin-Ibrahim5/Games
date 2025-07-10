@@ -9,9 +9,12 @@ export class Details {
                 document.querySelector(".games-container").classList.remove("d-none");
                 document.querySelector(".navbar").classList.remove("d-none");
                 document.querySelector(".game-details").classList.add("d-none");
+                if (document.body.classList.contains("details-bg")){
+                    document.body.classList.remove("details-bg");
+                    document.body.classList.add("bg-black");
+                }
             })
         });
-
     }
 
     async getDetails(id) {

@@ -46,6 +46,10 @@ export class Games {
             card.addEventListener("click", () => {
                 const id = card.dataset.id;
                 this.showDetails(id);
+                if (document.body.classList.contains("bg-black")) {
+                    document.body.classList.remove("bg-black");
+                    document.body.classList.add("details-bg");
+                }
             })
         })
     }
