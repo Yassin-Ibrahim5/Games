@@ -1,8 +1,18 @@
 /*!*!*!*!*!*!* Loading Animation *!*!*!*!*!*!*/
 
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+}
+
 .loader {
-    width: 48px;
-    height: 48px;
+    width: 75px;
+    height: 75px;
     border-radius: 50%;
     display: inline-block;
     position: relative;
@@ -23,18 +33,17 @@
     bottom: 0;
     margin: auto;
     border: 3px solid;
-    border-color: transparent transparent #FF3D00 #FF3D00;
-    width: 40px;
-    height: 40px;
+    border-color: transparent transparent #e1ad00 #e1ad00;
+    width: 3.906rem;
+    height: 3.906rem;
     border-radius: 50%;
-    box-sizing: border-box;
     animation: rotationBack 0.5s linear infinite;
     transform-origin: center center;
 }
 
 .loader::before {
-    width: 32px;
-    height: 32px;
+    width: 50px;
+    height: 50px;
     border-color: #FFF #FFF transparent transparent;
     animation: rotation 1.5s linear infinite;
 }
@@ -73,6 +82,9 @@
 
 nav.navbar {
     background-color: #131313;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .nav-link {
@@ -92,4 +104,11 @@ nav.navbar {
     font: 700 1.5rem 'Poppins', sans-serif;
 }
 
+.navbar-toggler {
+    border: #e1e100 !important;
+    color: #e1e100 !important;
+}
 
+.navbar-toggler-icon {
+    background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}

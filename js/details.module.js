@@ -1,4 +1,4 @@
-import {Ui} from "./ui.module";
+import {Ui} from "./ui.module.js";
 
 export class Details {
     constructor(id) {
