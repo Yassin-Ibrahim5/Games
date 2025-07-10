@@ -9,7 +9,7 @@ export class Details {
             document.querySelector(".details").classList.add("d-none");
         })
 
-
+        this.getDetails(id);
     }
 
     getDetails(id) {
