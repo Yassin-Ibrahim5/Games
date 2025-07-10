@@ -75,3 +75,21 @@ nav.navbar {
     background-color: #131313;
 }
 
+.nav-link {
+    font: 500 1.1rem 'Poppins', sans-serif;
+    transition: all 0.4s ease-in-out;
+}
+
+.nav-link.active {
+    color: #e1e100 !important;
+}
+
+.nav-link:hover {
+    color: #e1e100 !important;
+}
+
+.navbar-brand {
+    font: 700 1.5rem 'Poppins', sans-serif;
+}
+
+
