@@ -1,11 +1,17 @@
-import {Details} from "./details";
-import {Ui} from "./ui";
+import {Details} from "./details.module";
+import {Ui} from "./ui.module";
 
 export class Games {
     constructor() {
         this.getGames("mmorpg");
 
-        document.querySelectorAll(".nav-link").forEach()
+        document.querySelectorAll(".nav-link").forEach((link) => {
+            link.addEventListener("click", (event) => {
+                document.querySelector(".game-categories .active").classList.remove("active");
+                event.target.classList.add("active");
+                this.getGames(event.target.dataset.category);
+            });
+        });
 
         this.ui = new Ui();
     }

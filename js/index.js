@@ -1,14 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const navLinks = document.querySelectorAll(".nav-link");
+import {Games} from "./games.module";
 
-    function setActiveLink() {
-        let currentHash = window.location.hash;
-        navLinks.forEach(link => {
-            if (link.hash === currentHash) {
-                link.classList.add("active");
-            } else {
-                link.classList.remove("active");
-            }
-        });
-    }
-})
+new Games();
