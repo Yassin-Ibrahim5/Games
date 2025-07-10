@@ -20,7 +20,7 @@ export class Ui {
                             </div>
                         </div>
                         <footer class="card-footer small d-flex flex-row align-items-center justify-content-between">
-                            <span class="badge game-genre">${data[i].genre}</span>
+                            <span class="badge game-gradient">${data[i].genre}</span>
                             <span class="badge badge-bg">${data[i].platform}</span>
                         </footer>
                     </div>
@@ -31,18 +31,17 @@ export class Ui {
     }
 
     displayDetails(data) {
-        document.querySelector('.game-details').innerHTML = `
+        document.getElementById('details-content').innerHTML = `
             <div class="col-md-4">
                 <img src="${data.thumbnail}" alt="Game Thumbnail" class="w-100">
             </div>
             <div class="col-md-8">
-                <h3 class="game-title">Title: ${data.title}</h3>
-                <p class="game-category">Category: <span class="badge badge-bg">${data.genre}</span></p>
-                <p class="game-platform">Platform: <span class="badge badge-bg">${data.platform}</span></p>
-                <p class="game-status">Status: <span class="badge badge-bg">${data.status}</span></p>
+                <h3 class="game-title">Title: <span>${data.title}</span></h3>
+                <p class="game-category">Category: <span class="badge game-gradient">${data.genre}</span></p>
+                <p class="game-platform">Platform: <span class="badge game-gradient">${data.platform}</span></p>
+                <p class="game-status">Status: <span class="badge game-gradient">${data.status}</span></p>
                 <p class="game-description small">${data.description}</p>
                 <a href="${data.game_url}" target="_blank" class="btn badge-bg" id="show-game-btn">Show Game</a>
-                <button id="btn-close" class="btn btn-secondary"><i class="fa fa-xmark"></i></button>
             </div>
         `;
     }

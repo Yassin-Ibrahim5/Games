@@ -135,7 +135,7 @@ nav.navbar {
     background: #131313;
 }
 
-.game-genre {
+.game-gradient {
     color: #5CA7C9;
     border-left: 4px solid #386883;
     background-image: linear-gradient(to right, #386883 0%, #15242B 50%, #131313 100%);
@@ -144,9 +144,26 @@ nav.navbar {
 
 h3.game-title {
     color: white;
-    font: 500 1.075rem 'Poppins', sans-serif;
+    font: 500 1.05rem 'Poppins', sans-serif;
+    margin: 5px 0;
 }
 
 p.short-description {
     color: white;
+}
+
+.game-status,
+.game-platform,
+.game-category,
+.game-title {
+    color: white;
+    font-weight: 600;
+}
+
+p.game-description {
+    color: #ccc;
+}
+
+.details-bg {
+    background: #131313;
 }
